@@ -1,0 +1,16 @@
+<mat-list role="list">
+    <mat-list-item *ngFor="let todo of todos$ | async" role="listitem">
+        <div>
+            <div class="status" [class.done]="todo.completed">Status: <span>{{todo.completed ? 'Done' : 'In Progress'}}</span></div>
+            <div class="title">{{todo.title}}</div>
+        </div>
+    </mat-list-item>
+</mat-list>
+
+<mat-paginator 
+    [length]="200"
+    [pageSize]="15"
+    [pageSizeOptions]="[5, 10, 25, 100]"
+    (page)="onPageChage($event)"
+>
+</mat-paginator>

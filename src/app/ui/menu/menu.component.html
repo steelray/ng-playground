@@ -1,0 +1,12 @@
+<button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon" [matMenuTriggerFor]="menu">
+    <mat-icon>more_vert</mat-icon>
+</button>
+    <mat-menu #menu="matMenu">
+    <button mat-menu-item
+        *ngFor="let route of routes"
+        [routerLink]="route.path"
+        routerLinkActive="active"
+    >
+        {{route.label}}
+    </button>
+  </mat-menu>

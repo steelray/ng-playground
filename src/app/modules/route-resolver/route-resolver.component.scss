@@ -1,0 +1,26 @@
+mat-list-item {
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.title {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.status {
+  font-style: 13px;
+
+  span {
+    color: gray;
+  }
+
+  &.done {
+    span {
+      color: green;
+    }
+  }
+}

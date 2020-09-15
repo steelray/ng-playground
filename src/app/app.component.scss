@@ -1,0 +1,27 @@
+:host {
+  display: block;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #a5a5a5;
+}
+
+h1 {
+  flex: 1;
+  margin: 0;
+}
+
+app-menu {
+  margin-right: 15px;
+}
+
+main {
+  padding: 40px 0;
+}
