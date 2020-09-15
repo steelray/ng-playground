@@ -20,8 +20,6 @@ export class RouteResolverComponent implements OnInit {
 
   ngOnInit(): void {
 
-    // this.activatedRoute.data.subscribe(res => console.log(res));
-
     this.todos$ = combineLatest([
       this.page,
       this.limit
